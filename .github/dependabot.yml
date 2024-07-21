@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: /
+    schedule:
+      interval: "daily"
+      time: "07:00"
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+    groups:
+      astro:
+        patterns:
+          - "@astrojs/*"
+          - "astro"
+      tailwindcss:
+        patterns:
+          - "@tailwindcss/*"
+          - "tailwindcss"
+      dev-dependencies:
+        dependency-type: "development"
+
+  - package-ecosystem: "github-actions"
+    directory: /
+    schedule:
+      interval: "weekly"
+      day: "friday"
