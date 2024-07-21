@@ -1,5 +1,8 @@
 ---
-import "@fontsource-variable/rubik";
+import '@fontsource-variable/league-spartan';
+import { Image } from 'astro:assets';
+
+import logoImage from '../img/logo.svg';
 ---
 
 <html lang="en">
@@ -12,8 +15,8 @@ import "@fontsource-variable/rubik";
 	</head>
 	<body class="bg-black">
 		<div class="container mx-auto h-screen relative">
-			<img
-				src="https://placehold.co/600x400"
+			<Image
+				src={logoImage}
 				class="mx-auto text-center my-10 w-max-full"
 				alt="Logo"
 			/>
@@ -23,7 +26,7 @@ import "@fontsource-variable/rubik";
 				Geil wimers gmacht hei.
 			</h1>
 			<p class="prose text-slate-400 text-center mx-auto mt-10">
-				meh gits glii.
+				glii machemers no geiler.
 			</p>
 		</div>
 	</body>

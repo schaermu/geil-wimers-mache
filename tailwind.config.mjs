@@ -7,7 +7,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['"Rubik Variable"', ...defaultTheme.fontFamily.sans],
+				sans: ['"League Spartan Variable"', ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
