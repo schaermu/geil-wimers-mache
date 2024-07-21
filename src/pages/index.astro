@@ -1,5 +1,5 @@
 ---
-
+import "@fontsource-variable/rubik";
 ---
 
 <html lang="en">
@@ -10,7 +10,21 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-black">
+		<div class="container mx-auto h-screen relative">
+			<img
+				src="https://placehold.co/600x400"
+				class="mx-auto text-center my-10 w-max-full"
+				alt="Logo"
+			/>
+			<h1
+				class="prose font-sans text-5xl mx-auto text-center text-slate-200"
+			>
+				Geil wimers gmacht hei.
+			</h1>
+			<p class="prose text-slate-400 text-center mx-auto mt-10">
+				meh gits glii.
+			</p>
+		</div>
 	</body>
 </html>
