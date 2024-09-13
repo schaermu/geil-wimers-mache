@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/league-spartan": "^5.0.21",
+    "@fontsource-variable/league-spartan": "^5.1.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/typography": "^0.5.14",
     "astro": "^4.14.5",

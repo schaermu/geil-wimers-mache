@@ -12,8 +12,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(astro@4.14.5(rollup@4.21.0)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@fontsource-variable/league-spartan':
-        specifier: ^5.0.21
-        version: 5.0.21
+        specifier: ^5.1.0
+        version: 5.1.0
       '@tailwindcss/container-queries':
         specifier: ^0.1.1
         version: 0.1.1(tailwindcss@3.4.10)
@@ -295,8 +295,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/league-spartan@5.0.21':
-    resolution: {integrity: sha512-tVC9GjzNcVTJ5a9Qk41WCnv60enYQWozQv3XAbjLslj4hLeO4C9dfKxVn1fOdd5POg9MhCWgJ+I0ggmEDqWB6g==}
+  '@fontsource-variable/league-spartan@5.1.0':
+    resolution: {integrity: sha512-B1t7jv4OokHjOSon7fKDCUv3Z07exYSau4wgq52C9XVcCRMGtDLgpuS2IWcNC23Z10V462Pf0EGH5DRKnCwbHA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2189,7 +2189,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fontsource-variable/league-spartan@5.0.21': {}
+  '@fontsource-variable/league-spartan@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
