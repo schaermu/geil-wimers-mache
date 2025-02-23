@@ -1,5 +1,6 @@
 ---
 import childProcess from "child_process";
+import { tz } from "@date-fns/tz";
 import { format } from "date-fns";
 
 const hash = childProcess
@@ -8,7 +9,9 @@ const hash = childProcess
   .trim();
 const link = `https://github.com/schaermu/geil-wimers-mache/commit/${hash}`;
 
-const date = format(new Date(), "yyyy-MM-dd HH:mm");
+const date = format(new Date(), "yyyy-MM-dd HH:mm", {
+  in: tz("Europe/Zurich"),
+});
 ---
 
 <footer>
