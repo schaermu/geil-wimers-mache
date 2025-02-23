@@ -5,6 +5,11 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://www.geil-wimers-mache.ch',
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        $styles: '/src/styles',
+      }
+    }
   }
 });
