@@ -1,5 +1,6 @@
 ---
 import childProcess from "child_process";
+import { format } from "date-fns";
 
 const hash = childProcess
   .execSync("git rev-parse --short HEAD")
@@ -7,7 +8,7 @@ const hash = childProcess
   .trim();
 const link = `https://github.com/schaermu/geil-wimers-mache/commit/${hash}`;
 
-const date = `${new Date().getFullYear()}-${(new Date().getMonth() + 1).toString().padStart(2, "0")}-${new Date().getDate().toString().padStart(2, "0")} ${new Date().getHours().toString().padStart(2, "0")}:${new Date().getMinutes().toString().padStart(2, "0")}`;
+const date = format(new Date(), "yyyy-MM-dd HH:mm");
 ---
 
 <footer>
