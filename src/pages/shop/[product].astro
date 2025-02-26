@@ -1,0 +1,22 @@
+---
+import slugify from '@sindresorhus/slugify';
+
+import { getProducts } from '../../lib/gelato'
+
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+export async function getStaticPaths() {    
+    const { products } = await getProducts()
+    const urlMap = products.map(p => {
+        return { params: { product: slugify(p.title) } }
+    });
+    console.log(urlMap)
+    return urlMap
+}
+
+const { product } = Astro.params;
+---
+<SiteLayout>
+    <p>{product}</p>
+</SiteLayout>
+  
