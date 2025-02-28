@@ -1,0 +1,12 @@
+{
+	"name": "Node.js & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	"features": {
+		"ghcr.io/devcontainers-extra/features/cloudflare-wrangler:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["astro-build.astro-vscode", "bradlc.vscode-tailwindcss"]
+		}
+	}
+}
