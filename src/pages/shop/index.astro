@@ -1,17 +1,25 @@
 ---
+import slugify from "@sindresorhus/slugify";
 
-import ProductTeaser from '../../components/ProductTeaser.astro';
-import SiteLayout from '../../layouts/SiteLayout.astro';
-import { getProducts } from '../../lib/gelato'
+import ProductTeaser from "../../components/ProductTeaser.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { getProducts } from "../../lib/gelato";
 
-const { products } = await getProducts();
-
+const products = await getProducts();
 ---
 
 <SiteLayout>
-    <div class="grid grid-cols-2 gap-4">
-        {products.map(p => (
-            <ProductTeaser title={p.title} image={p.previewUrl} description={p.description} />
-        ))}
-    </div>
+  <div class="grid grid-cols-2 gap-4">
+    {
+      products.map((p) => (
+        <ProductTeaser
+          title={p.title}
+          image={p.previewUrl}
+          description={p.description}
+          price={p.priceDisplay}
+          href={`/shop/${slugify(p.title)}`}
+        />
+      ))
+    }
+  </div>
 </SiteLayout>
